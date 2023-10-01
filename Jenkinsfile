@@ -3,9 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                a = 10
-                b = 20
-                sum=$((num1 + num2))
                 echo "Sum $Sum";
             }
         }
@@ -20,5 +17,12 @@ pipeline {
             }
         }
     }
+    post{
+        step("Email Notification"){
+            echo "Email Notification";
+        }
+    }
+            
 }
+        
 
