@@ -5,8 +5,8 @@ pipeline {
             steps {
                 a = 10
                 b = 20
-                echo $(( a + b )
-                echo "First Step";
+                sum=$((num1 + num2))
+                echo "Sum $Sum";
             }
         }
         stage('Test') {
