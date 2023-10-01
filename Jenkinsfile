@@ -8,7 +8,7 @@ pipeline {
          stage('Example') {
       steps {
         /* WRONG! */
-        sh("echo ${STATEMENT}")
+        echo ${STATEMENT}"
       }
     }
         stage('Build') {
